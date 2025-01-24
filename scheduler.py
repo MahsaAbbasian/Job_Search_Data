@@ -21,9 +21,9 @@ def deploy():
     result = os.system("firebase deploy")
     log_message(f"Firebase deploy finished with status {result}")
 
-schedule.every().day.at("14:25").do(run_vakanser)
-schedule.every().day.at("14:30").do(run_arbetsformedlingen)
-schedule.every().day.at("14:35").do(deploy)
+schedule.every().day.at("17:20").do(run_vakanser)
+schedule.every().day.at("17:23").do(run_arbetsformedlingen)
+schedule.every().day.at("17:25").do(deploy)
 
 log_message("Scheduler started...")
 while True:
