@@ -15,7 +15,7 @@ SEARCH_QUERY = (
     "cloud OR devops OR python OR java OR C++ OR embedded OR programmer OR database"
 )
 NON_CONSULTANCY_COMPANIES = [
-    "Volvo Personvagnar AB", "Gotit", "Volvo Car Corporation", "Mullvad VPN", "Trafikverket", "Skatteverket",
+    "Etraveli Group AB","Volvo Personvagnar AB", "Gotit", "Volvo Car Corporation", "Mullvad VPN", "Trafikverket", "Skatteverket",
     "Jeppesen", "Hogia HR Systems AB", "Hogia Infrastructure Products AB", "Hogia Facility Management AB",
     "Hogia Business Products AB", "deepNumbers systems AB", "Åre Kommun", "Provide IT Sweden AB", "Acoem AB",
     "Icomera AB", "Volvo Group", "Drakryggen", "Saab AB", "Qamcom", "Humly", "Compary AB", "Assemblin",
@@ -27,7 +27,7 @@ NON_CONSULTANCY_COMPANIES = [
 ]
 
 CONSULTANCY_COMPANIES = [
-    "Mission Consultancy Assistance Sweden AB", "EdZa AB", "Knightec AB", "Friday Väst AB", "randstad ab", "Futuria People AB", "Goismo AB","MODERNERA AB", "Nexer Tech Talent AB", "NEXER GROUP", "Sebratec Gothenburg", "Rapid Consulting Sweden AB",
+    "Academic Work", "Academic Work Sweden AB", "Quest Consulting Sverige AB", "Jobnet AB", "Quest Consulting Sverige AB","Explipro Group", "Explipro Group AB", "Mission Consultancy Assistance Sweden AB", "EdZa AB", "Knightec AB", "Friday Väst AB", "randstad ab", "Futuria People AB", "Goismo AB","MODERNERA AB", "Nexer Tech Talent AB", "NEXER GROUP", "Sebratec Gothenburg", "Rapid Consulting Sweden AB",
     "Deploja AB", "Integro Consulting AB", "Zcelero AB", "Framtiden AB", "Sogeti", "IBM Client Innovation Center Sweden AB",
     "Knowit Sweden", "Castra", "Annvin AB", "XLNT Recruitment Group", "TNG Group AB", "5 Monkeys Agency AB",
     "Nexer Recruit", "H Sustain AB", "B3 Consulting Group", "Prevas", "JP IT-Konsult i Stockholm AB", "Decerno",

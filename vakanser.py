@@ -10,6 +10,26 @@ BASE_URL = "https://vakanser.se/alla/datajobb/i/goteborg/{}/"
 OUTPUT_FILE = "all_jobs_vakanser.csv"
 HTML_FILE = "public/vakanser.html"
 
+NON_CONSULTANCY_COMPANIES = [
+    "AB Lindex", "Lindex", "Breezity Solutions AB", "Etraveli Group AB","Volvo Personvagnar AB", "Gotit", "Volvo Car Corporation", "Mullvad VPN", "Trafikverket", "Skatteverket",
+    "Jeppesen", "Hogia HR Systems AB", "Hogia Infrastructure Products AB", "Hogia Facility Management AB",
+    "Hogia Business Products AB", "deepNumbers systems AB", "Åre Kommun", "Provide IT Sweden AB", "Acoem AB",
+    "Icomera AB", "Volvo Group", "Drakryggen", "Saab AB", "Qamcom", "Humly", "Compary AB", "Assemblin",
+    "QRTECH", "Novacura", "NOVENTUS SYSTEMS AKTIEBOLAG", "Polismyndigheten", "SOLTAK AB", "Göteborg Energi",
+    "Vipas AB", "HaleyTek AB", "Zacco Digital Trust", "Autocom", "Benify", "Logikfabriken AB", "DENTSPLY IH AB",
+    "Cambio", "Nexus - Powered by IN Groupe", "Skandia", "SJ AB", "Epiroc", "Hitachi Energy", "Pensionsmyndigheten",
+    "Nordea", "Expleo Technology Nordic AB", "Scania CV AB", "Din Psykolog Sverige AB", "Wehype", "Flower",
+    "Tutus Data", "Xensam", "BAE Systems Hägglunds AB", "ITAB", "RASALA Group AB"
+]
+
+CONSULTANCY_COMPANIES = [
+    "Academic Work", "Academic Work Sweden AB", "Quest Consulting Sverige AB", "Jobnet AB", "Quest Consulting Sverige AB","Explipro Group", "Explipro Group AB", "Mission Consultancy Assistance Sweden AB", "EdZa AB", "Knightec AB", "Friday Väst AB", "randstad ab", "Futuria People AB", "Goismo AB","MODERNERA AB", "Nexer Tech Talent AB", "NEXER GROUP", "Sebratec Gothenburg", "Rapid Consulting Sweden AB",
+    "Deploja AB", "Integro Consulting AB", "Zcelero AB", "Framtiden AB", "Sogeti", "IBM Client Innovation Center Sweden AB",
+    "Knowit Sweden", "Castra", "Annvin AB", "XLNT Recruitment Group", "TNG Group AB", "5 Monkeys Agency AB",
+    "Nexer Recruit", "H Sustain AB", "B3 Consulting Group", "Prevas", "JP IT-Konsult i Stockholm AB", "Decerno",
+    "AFRY AB", "Arctic Group"
+]
+
 # --- Helper Functions ---
 def fetch_html(page_number, retries=3, delay=2):
     """
@@ -28,6 +48,22 @@ def fetch_html(page_number, retries=3, delay=2):
         time.sleep(delay)
     print(f"Failed to fetch page {page_number} after {retries} retries.")
     return None
+
+def classify_job(employer):
+    """
+    Classify a job based on employer name using predefined lists.
+    """
+    employer_cleaned = employer.strip().lower()
+
+    for company in NON_CONSULTANCY_COMPANIES:
+        if company.lower() in employer_cleaned:
+            return "Non-Consultancy"
+
+    for company in CONSULTANCY_COMPANIES:
+        if company.lower() in employer_cleaned:
+            return "Consultancy"
+
+    return "Uncategorized"
 
 def parse_html(html_content):
     """
@@ -55,11 +91,14 @@ def parse_html(html_content):
             title = title_tag.text.strip() if title_tag else "Unknown Title"
             job_link = f"https://vakanser.se{title_tag['href']}" if title_tag else "N/A"
 
+            category = classify_job(employer)
+
             # Add job to the list
             jobs.append({
                 "Date": date,
                 "Title": title,
                 "Employer": employer,
+                "Category": category,
                 "Job Link": job_link
             })
 
@@ -128,11 +167,12 @@ def save_to_html(jobs, filename):
 
         for date in sorted_dates:
             file.write(f"<h2>Jobs from {date}</h2>")
-            file.write("<table border='1'><tr><th>Title</th><th>Employer</th><th>Date</th><th>Job Link</th></tr>")
+            file.write("<table border='1'><tr><th>Title</th><th>Employer</th><th>Category</th><th>Date</th><th>Job Link</th></tr>")
             for job in grouped_jobs[date]:
                 file.write("<tr>")
                 file.write(f"<td>{job['Title']}</td>")
                 file.write(f"<td>{job['Employer']}</td>")
+                file.write(f"<td>{job['Category']}</td>")
                 file.write(f"<td>{job['Date']}</td>")
                 file.write(f"<td><a href='{job['Job Link']}' target='_blank'>View Job</a></td>")
                 file.write("</tr>")
