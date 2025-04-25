@@ -10,9 +10,12 @@ HEADERS = {"accept": "application/json"}
 MUNICIPALITY_CODE = "1480"  # Göteborg
 OCCUPATION_FIELD = "apaJ_2ja_LuF"  # Data/IT field
 SEARCH_QUERY = (
-    "developer OR engineer OR utvecklare OR Systemutvecklare OR Programmerare OR "
-    "software OR mjukvaruutvecklare OR systemdeveloper OR backend OR frontend OR "
-    "cloud OR devops OR python OR java OR C++ OR embedded OR programmer OR database"
+    "developer", "engineer", "utvecklare", "systemutvecklare", "programmerare",
+    "software", "mjukvaruutvecklare", "systemdeveloper", "backend", "frontend",
+    "cloud", "devops", "python", "java", "c++", "embedded", "programmer", "database",
+    "junior", "entry level", "graduate", "trainee", "intern", "praktik", "student",
+    "ai", "ml", "data scientist", "data analyst", "fullstack", "webb", "mobile",
+    "android", "ios", "typescript", "javascript", "react", "vue", "dotnet", "ci/cd"
 )
 NON_CONSULTANCY_COMPANIES = [
     "Etraveli Group AB","Volvo Personvagnar AB", "Gotit", "Volvo Car Corporation", "Mullvad VPN", "Trafikverket", "Skatteverket",
