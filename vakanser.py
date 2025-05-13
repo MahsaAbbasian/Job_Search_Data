@@ -9,7 +9,7 @@ import time
 BASE_URL = "https://vakanser.se/alla/datajobb/i/goteborg/{}/"
 OUTPUT_FILE = "all_jobs_vakanser.csv"
 HTML_FILE = "public/vakanser.html"
-TARGET_DATE = "2025-02-10"  # Change this to your desired stop date
+TARGET_DATE = "2025-05-01"  # Change this to your desired stop date
 target_date_obj = datetime.strptime(TARGET_DATE, "%Y-%m-%d")
 
 def fetch_html(page_number, retries=3, delay=2):

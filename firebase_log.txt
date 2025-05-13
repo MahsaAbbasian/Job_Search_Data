@@ -356,3 +356,88 @@
 
 [1mProject Console:[22m https://console.firebase.google.com/project/job-application-tables/overview
 [1mHosting URL:[22m https://job-application-tables.web.app
+2025-04-29 10:00:01,69 - Firebase Deploy Started 
+
+[1m[37m===[39m Deploying to 'job-application-tables'...[22m
+
+[36m[1mi [22m[39m deploying [1mhosting[22m
+[36m[1mi  hosting[job-application-tables]:[22m[39m beginning deploy...
+[36m[1mi  hosting[job-application-tables]:[22m[39m found 4 files in [1mpublic[22m
+[32m[1m+  hosting[job-application-tables]:[22m[39m file upload complete
+[36m[1mi  hosting[job-application-tables]:[22m[39m finalizing version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m version finalized
+[36m[1mi  hosting[job-application-tables]:[22m[39m releasing new version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m release complete
+
+[32m[1m+ [22m[39m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/job-application-tables/overview
+[1mHosting URL:[22m https://job-application-tables.web.app
+2025-04-30 10:00:01,72 - Firebase Deploy Started 
+
+[1m[37m===[39m Deploying to 'job-application-tables'...[22m
+
+[36m[1mi [22m[39m deploying [1mhosting[22m
+[36m[1mi  hosting[job-application-tables]:[22m[39m beginning deploy...
+[36m[1mi  hosting[job-application-tables]:[22m[39m found 4 files in [1mpublic[22m
+[32m[1m+  hosting[job-application-tables]:[22m[39m file upload complete
+[36m[1mi  hosting[job-application-tables]:[22m[39m finalizing version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m version finalized
+[36m[1mi  hosting[job-application-tables]:[22m[39m releasing new version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m release complete
+
+[32m[1m+ [22m[39m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/job-application-tables/overview
+[1mHosting URL:[22m https://job-application-tables.web.app
+2025-05-08 10:00:01,83 - Firebase Deploy Started 
+
+[1m[37m===[39m Deploying to 'job-application-tables'...[22m
+
+[36m[1mi [22m[39m deploying [1mhosting[22m
+[36m[1mi  hosting[job-application-tables]:[22m[39m beginning deploy...
+[36m[1mi  hosting[job-application-tables]:[22m[39m found 4 files in [1mpublic[22m
+[32m[1m+  hosting[job-application-tables]:[22m[39m file upload complete
+[36m[1mi  hosting[job-application-tables]:[22m[39m finalizing version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m version finalized
+[36m[1mi  hosting[job-application-tables]:[22m[39m releasing new version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m release complete
+
+[32m[1m+ [22m[39m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/job-application-tables/overview
+[1mHosting URL:[22m https://job-application-tables.web.app
+2025-05-11 10:00:01,33 - Firebase Deploy Started 
+
+[1m[37m===[39m Deploying to 'job-application-tables'...[22m
+
+[36m[1mi [22m[39m deploying [1mhosting[22m
+[36m[1mi  hosting[job-application-tables]:[22m[39m beginning deploy...
+[36m[1mi  hosting[job-application-tables]:[22m[39m found 4 files in [1mpublic[22m
+[32m[1m+  hosting[job-application-tables]:[22m[39m file upload complete
+[36m[1mi  hosting[job-application-tables]:[22m[39m finalizing version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m version finalized
+[36m[1mi  hosting[job-application-tables]:[22m[39m releasing new version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m release complete
+
+[32m[1m+ [22m[39m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/job-application-tables/overview
+[1mHosting URL:[22m https://job-application-tables.web.app
+2025-05-13 10:00:01,76 - Firebase Deploy Started 
+
+[1m[37m===[39m Deploying to 'job-application-tables'...[22m
+
+[36m[1mi [22m[39m deploying [1mhosting[22m
+[36m[1mi  hosting[job-application-tables]:[22m[39m beginning deploy...
+[36m[1mi  hosting[job-application-tables]:[22m[39m found 4 files in [1mpublic[22m
+[32m[1m+  hosting[job-application-tables]:[22m[39m file upload complete
+[36m[1mi  hosting[job-application-tables]:[22m[39m finalizing version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m version finalized
+[36m[1mi  hosting[job-application-tables]:[22m[39m releasing new version...
+[32m[1m+  hosting[job-application-tables]:[22m[39m release complete
+
+[32m[1m+ [22m[39m [1m[4mDeploy complete![24m[22m
+
+[1mProject Console:[22m https://console.firebase.google.com/project/job-application-tables/overview
+[1mHosting URL:[22m https://job-application-tables.web.app
